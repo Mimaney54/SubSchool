@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: #f7f7f7;
+}
+h1{
+    text-align: center;
+    margin: 20px 0 10px;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.menu{
+    background: #303030;
+    padding: 12px 60px;
+    color: #fff;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.menu a:hover{
+    color: #f5bb32;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.nav-line{
+    background: #fff;
+    height: 44px;
+    width: 3px;
+}
+/*Header end*/
+
+/*Контент главной страницы*/
+.jumbotron{
+    background: #22c1c3; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #22c1c3 0%, #fdbb2d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #22c1c3 0%,#fdbb2d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #22c1c3 0%,#fdbb2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22c1c3', endColorstr='#fdbb2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 95px 30px 150px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-self: center;
+}
+.jumbotron h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+}
+.random-wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: -50px
+}
+.random{
+    background: #303030;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.random-button{
+    background: #303030;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #f0bb36;
+    border-bottom: 10px solid transparent;
+    float: right;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.random div{
+    background: #fff;
+    padding: 5px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Контент главной страницы end*/
+
+/*Контент Pokedex*/
+.search-wrap{
+    background: #099395;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.search-wrap input{
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+    width: 30%;
+}
+.search-button{
+    background: #f0bb36;
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.pokedex{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding: 10px 0;
+}
+.filter-column{
+    background: #303030;
+    padding: 20px 10px;
+    color: #fff;
+}
+.filter-column h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px auto;
+    text-align: center;
+}
+.filter-name{
+    margin: 5px 0;
+}
+.filter-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-list >*{
+    margin: 0 2px 4px;
+}
+.pokemon-table{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.pokemon-info{
+    background: #e6e6e6;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    padding: 10px 10px 0;
+}
+.pokemon-info a{
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+.pokemon-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.pokemon-class{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    padding: 10px;
+    border: 2px solid #e6e6e6;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+.electric{
+    background: #f0bb36;
+    color: #333;
+}
+.grass{
+    background: green;
+    color: #fff;
+}
+.poison{
+    background: violet;
+    color: #333;
+}
+.ground{
+    background: saddlebrown;
+    color: #fff;
+}
+.fire{
+    background: firebrick;
+    color: #fff;
+}
+.normal{
+    background: #ddd;
+    color: #333;
+}
+.fairy{
+    background: hotpink;
+    color: #fff;
+}
+.pokemon-type{
+    padding: 3px;
+    text-overflow:ellipsis;
+    border-radius: 3px;
+    text-align: center;
+}
+.service-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+}
+.service-button span{
+    display: block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+.bg-arrows {
+    background: url('img/buttons.png') -2px -2px;
+}
+.bg-heart {
+    background: url('img/buttons.png') -32px -2px;
+}
+.bg-heart_active {
+    background: url('img/buttons.png') -2px -32px;
+}
+.bg-pokeball {
+    background: url('img/buttons.png') -32px -32px;
+}
+.bg-pokeball_active {
+    background: url('img/buttons.png') -62px -2px;
+}
+
+/*Контент Pokedex end*/
+
+/*Pokemon card*/
+.pokemon-card{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+.description{
+    padding: 10px;
+}
+.description table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+.description table tr, .description table td{
+    border: 1px solid;
+}
+.description table td{
+    padding: 5px;
+}
+/*Pokemon card end*/
+
+
+/*Footer*/
+.footer{
+    background: #099395;
+    padding: 40px 20px;
+    color: #fff;
+    box-sizing: border-box;
+}
+/*Footer end*/
