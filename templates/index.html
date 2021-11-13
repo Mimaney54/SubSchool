@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анализ спроса и конверсий в продаж</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+{% include 'inc/menu.html' %}
+<main>
+    <div class="container jumbotron">
+        <div>
+            <img src="{% static 'img/logo.png' %}" alt="">
+            <h1>Собери свою<br> коллекцию покемонов</h1>
+        </div>
+        <div>
+            <img src="{% static 'img/jumbotron.png' %}" alt="">
+        </div>
+    </div>
+    <div class="random-wrap">
+        <div class="random-button">
+            Случайные покемоны<div class="arrow"></div>
+        </div>
+        <div class="random">
+            <div class="random-pokemon">
+                <img src="{% static 'img/pikachu.png' %}" alt="">
+                <div>Пикачу</div>
+            </div>
+            <div class="random-pokemon">
+                <img src="{% static 'img/eve.png' %}" alt="">
+                <div>Иви</div>
+            </div>
+            <div class="random-pokemon">
+                <img src="{% static 'img/jigglypuff.png' %}" alt="">
+                <div>Джигглипуф</div>
+            </div>
+        </div>
+    </div>
+</main>
+{% include 'inc/footer.html' %}
+</body>
+</html>

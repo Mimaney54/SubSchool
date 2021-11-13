@@ -1,0 +1,33 @@
+{% load static %}
+<header>
+    <div class="container">
+        <nav class="menu">
+            <ul>
+                <li><a href="/">Спрос и конверсия</a></li>
+                <li class="nav-line"></li>
+                <li><a href="/sales">Продажи и финансы</a></li>
+                <li><a href="/recommendation"></a>Рекомендации</a></li>
+                <li><a href="/advertising">Реклама</a></li>
+                <li><a href="/date">Загрузка данных</a></li>
+                <li><a href="/billing"><img src="{% static 'img/pokeball.png' %}" alt=""></li>
+                <li><a href="/profile"><img src="{% static 'img/pokeball.png' %}" alt=""></li>
+                <li class="nav-line"></li>
+<!--                <li>-->
+<!--                    {% if user.is_authenticated %}-->
+<!--                        Welcome, {{ user.username }}.-->
+<!--                        <a href="/user/logout"> logout </a>-->
+<!--                    {% else %}-->
+<!--                        <a href="">Войти</a>-->
+<!--                        <form method="post" action="/user/login">{% csrf_token %}-->
+<!--                            <label for="username">username: </label>-->
+<!--                            <input name="username" id="username" type="text"><br>-->
+<!--                            <label for="password">password: </label>-->
+<!--                            <input name="password" id="password" type="password"><br>-->
+<!--                            <button type="submit">login</button>-->
+<!--                        </form>-->
+<!--                    {% endif %}-->
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,11 @@
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+
+<ul>
+    {% for pokemon in pokemons %}
+        <li><img style="max-height: 80px" src="{{ MEDIA_URL }}{{ pokemon.image }}">{{ pokemon.name }}</li>
+    {% endfor %}
+</ul>

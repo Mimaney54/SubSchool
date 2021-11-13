@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Собери коллекцию покемонов</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+{% include 'inc/menu.html' %}
+<main>
+    <div class="container">
+        <h1>{{ pokemon.name }}</h1>
+        <div class="pokemon-card">
+            <div class="pokemon-info">
+                <div>
+                    <img src="{{ MEDIA_URL }}{{ pokemon.image }}" alt="">
+                </div>
+                <div class="service-button">
+                    <span class="bg-pokeball"></span>
+                    <span class="bg-heart"></span>
+                    <span class="bg-arrows"></span>
+                </div>
+            </div>
+            <div class="description">
+                <p>Всякий раз, когда Пикачу видит что-то новое, он просто разрывается от энергии. Если Вы пойдете следом
+                    за Пикачу, то можете увидеть обугленные ягоды или листья.</p>
+                <table>
+                    <tr>
+                        <td>Рост</td>
+                        <td>{{ pokemon.height }}</td>
+                    </tr>
+                    <tr>
+                        <td>Вес</td>
+                        <td>{{ pokemon.weight }}0 кг</td>
+                    </tr>
+                    <tr>
+                        <td>Здоровье</td>
+                        <td>{{ pokemon.hp }}</td>
+                    </tr>
+                    <tr>
+                        <td>Атака</td>
+                        <td>{{ pokemon.attack }}</td>
+                    </tr>
+                    <tr>
+                        <td>Скорость</td>
+                        <td>{{ pokemon.speed }}</td>
+                    </tr>
+                </table>
+                <div>
+                    <div>Тип</div>
+                    <span class="electric pokemon-type">Электричество</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% include 'inc/footer.html' %}
+</body>
+</html>
